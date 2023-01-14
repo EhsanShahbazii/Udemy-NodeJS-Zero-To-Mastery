@@ -1,4 +1,4 @@
-### 007 Sending Responses
+## 007 Sending Responses
 می تونیم ریسپانس هم بفرستیم. اینجا با متد های ریسپانس که `setHeader` و `write` هست آشنا می شیم.
 ```js
 const http = require("http");
