@@ -1,4 +1,4 @@
-### 006 Understanding Requests
+## 006 Understanding Requests
 ریکوئست متد های خیلی زیادی داره که اینجا با سه تاش به نام های `url`، `method` و `header` آشنا می شیم.
 
 ```js
