@@ -52,3 +52,5 @@ const requestHandler = (req, res) => {
 module.exports = requestHandler;
 ```
 برای دسترسی به فایل `routes.js` تو `app.js` باید این ماژول رو اکسپورت کنیم برای همین ما چند تا روش داریم که یکیش `module.exports` هست.
+
+می تونیم برای سادگی کار کلمه `module` رو ننویسیم. روش دیگه ای هم هست که برای `ES6` به کار میره و اون هم `export default` و `import` هست.
