@@ -63,14 +63,16 @@ switch (typeof chunk) {
   }
 ...
 ```
-حتی میتونیم به جای اینکه خودمون سرور رو درست کنیم، از متد `( )listen` استفاده کنیم:
+حتی می تونیم به جای اینکه خودمون سرور رو درست کنیم، از متد `( )listen` استفاده کنیم:
+
+اگه تو آدرس `express/lib/application.js` تو خط `633` می بینیم که:
 ```js
 app.listen = function listen() {
   var server = http.createServer(this);
   return server.listen.apply(server, arguments);
 };
 ```
-پس میتونیم فقط عبارت زیر رو بنویسیم و سرور درست کنیم:
+پس می تونیم فقط عبارت زیر رو بنویسیم و سرور درست کنیم:
 ```js
 app.listen();
 ```
