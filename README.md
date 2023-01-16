@@ -28,4 +28,5 @@ Docs language: Farsi
   - [009 Limiting Middleware Execution to POST Requests.md](05%20Working%20with%20Express.js/009%20Limiting%20Middleware%20Execution%20to%20POST%20Requests.md)
   - [010 Using Express Router.md](05%20Working%20with%20Express.js/010%20Using%20Express%20Router.md)
   - [011 Adding a 404 Error Page.md](05%20Working%20with%20Express.js/011%20Adding%20a%20404%20Error%20Page.md)
+  - [012 Filtering Paths.md](05%20Working%20with%20Express.js/012%20Filtering%20Paths.md)
   > 2023/01/16
