@@ -30,3 +30,6 @@ Docs language: Farsi
   - [011 Adding a 404 Error Page.md](05%20Working%20with%20Express.js/011%20Adding%20a%20404%20Error%20Page.md)
   - [012 Filtering Paths.md](05%20Working%20with%20Express.js/012%20Filtering%20Paths.md)
   > 2023/01/16
+  - [013 Creating HTML Pages.md](05%20Working%20with%20Express.js/013%20Creating%20HTML%20Pages.md)
+  - [014 Serving HTML Pages.md](05%20Working%20with%20Express.js/014%20Serving%20HTML%20Pages.md)
+  > 2023/01/20
