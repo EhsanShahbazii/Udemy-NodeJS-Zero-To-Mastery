@@ -32,4 +32,7 @@ Docs language: Farsi
   > 2023/01/16
   - [013 Creating HTML Pages.md](05%20Working%20with%20Express.js/013%20Creating%20HTML%20Pages.md)
   - [014 Serving HTML Pages.md](05%20Working%20with%20Express.js/014%20Serving%20HTML%20Pages.md)
+  - [015 Returning a 404 Page.md](05%20Working%20with%20Express.js/015%20Returning%20a%20404%20Page.md)
+  - [017 Using a Helper Function for Navigation.md](05%20Working%20with%20Express.js/017%20Using%20a%20Helper%20Function%20for%20Navigation.md)
+  - [019 Serving Files Statically.md](05%20Working%20with%20Express.js/019%20Serving%20Files%20Statically.md)
   > 2023/01/20
