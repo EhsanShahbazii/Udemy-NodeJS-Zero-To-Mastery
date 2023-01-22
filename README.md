@@ -38,4 +38,6 @@ Docs language: Farsi
   > 2023/01/20
 - ### [06 Working with Dynamic Content & Adding Templating Engines](06%20Working%20with%20Dynamic%20Content%20&%20Adding%20Templating%20Engines)
   - [002 Sharing Data Across Requests & Users.md](06%20Working%20with%20Dynamic%20Content%20&%20Adding%20Templating%20Engines/002%20Sharing%20Data%20Across%20Requests%20&%20Users.md)
+  - [004 Installing & Implementing Pug.md](06%20Working%20with%20Dynamic%20Content%20&%20Adding%20Templating%20Engines/004%20Installing%20&%20Implementing%20Pug.md)
+  - [005 Outputting Dynamic Content.md](06%20Working%20with%20Dynamic%20Content%20&%20Adding%20Templating%20Engines/005%20Outputting%20Dynamic%20Content.md)
    > 2023/01/22
