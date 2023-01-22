@@ -36,3 +36,6 @@ Docs language: Farsi
   - [017 Using a Helper Function for Navigation.md](05%20Working%20with%20Express.js/017%20Using%20a%20Helper%20Function%20for%20Navigation.md)
   - [019 Serving Files Statically.md](05%20Working%20with%20Express.js/019%20Serving%20Files%20Statically.md)
   > 2023/01/20
+- ### [06 Working with Dynamic Content & Adding Templating Engines](06%20Working%20with%20Dynamic%20Content%20&%20Adding%20Templating%20Engines)
+  - [002 Sharing Data Across Requests & Users.md](06%20Working%20with%20Dynamic%20Content%20&%20Adding%20Templating%20Engines/002%20Sharing%20Data%20Across%20Requests%20&%20Users.md)
+   > 2023/01/22
