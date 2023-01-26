@@ -49,3 +49,5 @@ Docs language: Farsi
   - [014 Working with EJS.md](06%20Working%20with%20Dynamic%20Content%20&%20Adding%20Templating%20Engines/014%20Working%20with%20EJS.md)
   - [015 Working on the Layout with Partials.md](06%20Working%20with%20Dynamic%20Content%20&%20Adding%20Templating%20Engines/015%20Working%20on%20the%20Layout%20with%20Partials.md)
    > 2023/01/25
+   
+   
