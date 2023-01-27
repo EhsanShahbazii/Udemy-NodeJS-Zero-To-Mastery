@@ -1,4 +1,4 @@
-## 002 What is the MVC
+## 003 Adding Controllers
 در واقع به زبان ساده `MVC` نوعی معماری که مخفف `Model View Controller` هست. ما تو پروژه قسمت های مختلف رو از هم جدا می کنیم. مثلا تو پوشه `controllers` می نویسیم:
 
 ```js
