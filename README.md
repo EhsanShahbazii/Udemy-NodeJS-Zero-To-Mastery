@@ -53,4 +53,4 @@ Docs language: Farsi
    
    
 ## Subtitles (Farsi)
-  - 
+  - [07 The Model View Controller (MVC)](07%20The%20Model%20View%20Controller%20(MVC)/Subtitles%20(Farsi))
