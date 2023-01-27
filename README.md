@@ -21,6 +21,7 @@ Docs language: Farsi
   - [013 Blocking and Non-Blocking Code](03%20Understanding%20the%20Basics/013%20Blocking%20and%20Non-Blocking%20Code.md)
   - [015 Using the Node Modules System](03%20Understanding%20the%20Basics/015%20Using%20the%20Node%20Modules%20System.md)
   > 2023/01/15
+  
 - ### [05 Working with Express.js](05%20Working%20with%20Express.js)
   - [003 Installing Express.js.md](05%20Working%20with%20Express.js/003%20Installing%20Express.js.md)
   - [004 Adding Middleware.md](05%20Working%20with%20Express.js/004%20Adding%20Middleware.md)
@@ -39,6 +40,7 @@ Docs language: Farsi
   - [017 Using a Helper Function for Navigation.md](05%20Working%20with%20Express.js/017%20Using%20a%20Helper%20Function%20for%20Navigation.md)
   - [019 Serving Files Statically.md](05%20Working%20with%20Express.js/019%20Serving%20Files%20Statically.md)
   > 2023/01/20
+  
 - ### [06 Working with Dynamic Content & Adding Templating Engines](06%20Working%20with%20Dynamic%20Content%20&%20Adding%20Templating%20Engines)
   - [002 Sharing Data Across Requests & Users.md](06%20Working%20with%20Dynamic%20Content%20&%20Adding%20Templating%20Engines/002%20Sharing%20Data%20Across%20Requests%20&%20Users.md)
   - [004 Installing & Implementing Pug.md](06%20Working%20with%20Dynamic%20Content%20&%20Adding%20Templating%20Engines/004%20Installing%20&%20Implementing%20Pug.md)
@@ -51,6 +53,15 @@ Docs language: Farsi
   - [015 Working on the Layout with Partials.md](06%20Working%20with%20Dynamic%20Content%20&%20Adding%20Templating%20Engines/015%20Working%20on%20the%20Layout%20with%20Partials.md)
    > 2023/01/25
    
+- ### [07 The Model View Controller (MVC)](07%20The%20Model%20View%20Controller%20(MVC))
+  - [002 What is the MVC](07%20The%20Model%20View%20Controller%20(MVC)/002%20What%20is%20the%20MVC.md)
+  - [003 Adding Controllers](07%20The%20Model%20View%20Controller%20(MVC)/003%20Adding%20Controllers.md)
+  - [004 Finishing the Controllers](07%20The%20Model%20View%20Controller%20(MVC)/004%20Finishing%20the%20Controllers.md)
+  - [005 Adding a Product Model](07%20The%20Model%20View%20Controller%20(MVC)/005%20Adding%20a%20Product%20Model.md)
+  - [006 Storing Data in Files Via the Model](07%20The%20Model%20View%20Controller%20(MVC)/006%20Storing%20Data%20in%20Files%20Via%20the%20Model.md)
+  - [007 Fetching Data from Files Via the Model](07%20The%20Model%20View%20Controller%20(MVC)/007%20Fetching%20Data%20from%20Files%20Via%20the%20Model.md)
+  - [008 Refactoring the File Storage Code](07%20The%20Model%20View%20Controller%20(MVC)/008%20Refactoring%20the%20File%20Storage%20Code.md)
+  > 2023/01/27
    
 ## Subtitles (Farsi)
   - [06 Working with Dynamic Content & Adding Templating Engines](06%20Working%20with%20Dynamic%20Content%20&%20Adding%20Templating%20Engines/Subtitles%20(Farsi))
