@@ -64,6 +64,11 @@ Docs language: Farsi
   > 2023/01/27
    
 ## Subtitles (Farsi)
+  - [01 Introduction](01%20Introduction/Subtitles%20(Farsi))
+  - [02 Optional_ JavaScript - A Quick Refresher](02%20Optional_%20JavaScript%20-%20A%20Quick Refresher/Subtitles%20(Farsi))
+  - [03 Understanding the Basics](03%20Understanding%20the%20Basics/Subtitles%20(Farsi))
+  - [04 Improved Development Workflow and Debugging](04%20Improved%20Development%20Workflow%20and%20Debugging/Subtitles%20(Farsi))
+  - [05 Working with Express.js](05%20Working%20with%20Express.js/Subtitles%20(Farsi))
   - [06 Working with Dynamic Content & Adding Templating Engines](06%20Working%20with%20Dynamic%20Content%20&%20Adding%20Templating%20Engines/Subtitles%20(Farsi))
   - [07 The Model View Controller (MVC)](07%20The%20Model%20View%20Controller%20(MVC)/Subtitles%20(Farsi))
   - [08 Optional_ Enhancing the App](08%20Optional_%20Enhancing%20the%20App/Subtitles%20(Farsi))
