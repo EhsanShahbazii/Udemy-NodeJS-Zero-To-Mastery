@@ -1,0 +1,159 @@
+1
+00:00:02,300 --> 00:00:09,140
+Now in this module, we had a look at how we can have an easier time developing or building nodejs
+
+2
+00:00:09,140 --> 00:00:10,470
+applications I guess.
+
+3
+00:00:10,600 --> 00:00:17,420
+And for this, we started with npm, the node package manager which allows us to manage our project and mostly
+
+4
+00:00:17,420 --> 00:00:23,990
+its dependencies but also which added this package.json and gave us the opportunity of adding
+
+5
+00:00:23,990 --> 00:00:25,160
+scripts there.
+
+6
+00:00:25,430 --> 00:00:30,560
+So with npm init, you can initialize a new project, you basically add a package.json
+
+7
+00:00:30,620 --> 00:00:37,490
+with that command and then you saw that you can use scripts to define shortcuts to commands you
+
+8
+00:00:37,490 --> 00:00:39,530
+run all the time anyways.
+
+9
+00:00:39,590 --> 00:00:45,890
+We also use npm to install third party packages though because node projects typically don't just use
+
+10
+00:00:45,890 --> 00:00:52,040
+the core modules for your own code but often you want to pull in third party packages. Utility packages
+
+11
+00:00:52,040 --> 00:00:56,670
+like nodemon as we did it here but also as you will see in the next section,
+
+12
+00:00:56,690 --> 00:01:03,560
+real big packages that we use in our production code, expressjs is what we'll install there.
+
+13
+00:01:03,560 --> 00:01:08,570
+You can install different kinds of dependencies which doesn't really make a difference, you could use
+
+14
+00:01:08,570 --> 00:01:14,770
+them all even without specifying any of these options but it helps you keep track of which dependency
+
+15
+00:01:14,770 --> 00:01:16,200
+you are using for what.
+
+16
+00:01:16,250 --> 00:01:21,800
+--save and --save-dev allow you to differentiate between production and development
+
+17
+00:01:21,800 --> 00:01:28,470
+dependencies and global dependencies with -g can be run from within the terminal without getting
+
+18
+00:01:28,520 --> 00:01:30,850
+a command not found error.
+
+19
+00:01:31,370 --> 00:01:33,270
+Speaking of errors, well
+
+20
+00:01:33,290 --> 00:01:35,330
+in your code you often have errors,
+
+21
+00:01:35,390 --> 00:01:39,070
+that is absolutely normal and there are different types of errors
+
+22
+00:01:39,080 --> 00:01:45,200
+you can have a look at. Syntax, runtime and logical errors are three categories of errors
+
+23
+00:01:45,250 --> 00:01:47,950
+I identified. Syntax and runtime errors
+
+24
+00:01:47,960 --> 00:01:51,050
+at least throw a hopefully helpful error message
+
+25
+00:01:51,050 --> 00:01:56,150
+and you should read these messages and look at the line numbers they give you because that often helps
+
+26
+00:01:56,150 --> 00:02:03,530
+you find out what went wrong and how to fix this. Logical errors often are more difficult to fix
+
+27
+00:02:03,630 --> 00:02:10,670
+but you can fix them often with a lot of testing and possibly the help of the debugger which you learned
+
+28
+00:02:10,680 --> 00:02:14,940
+how to use with the help of Visual Studio code in this section.
+
+29
+00:02:14,940 --> 00:02:22,430
+Speaking of debugging, debugging can be a helpful process because you can use vs code or debuggers
+
+30
+00:02:22,440 --> 00:02:29,580
+of other IDEs that can be used with node to look into your code whilst it's running and step through it
+
+31
+00:02:29,730 --> 00:02:31,140
+step by step.
+
+32
+00:02:31,170 --> 00:02:37,080
+You can analyze the variable values at runtime and you cannot just look into them but you can also manipulate
+
+33
+00:02:37,080 --> 00:02:37,990
+them as you learned,
+
+34
+00:02:38,190 --> 00:02:44,100
+you do all that by setting breakpoints so that you define when your code execution should stop and give
+
+35
+00:02:44,100 --> 00:02:49,920
+you an opportunity to look into the code. You can find more than one breakpoint at a time and you should
+
+36
+00:02:49,920 --> 00:02:51,500
+manage them cleverly,
+
+37
+00:02:51,510 --> 00:02:54,650
+keep in mind how node code executes, that
+
+38
+00:02:54,720 --> 00:03:01,140
+it's not line after line but that it works with callbacks and is event driven and therefore if you want
+
+39
+00:03:01,140 --> 00:03:07,770
+to look into a callback, you have to add the breakpoint there and not right before it. With all that, you
+
+40
+00:03:07,770 --> 00:03:12,300
+hopefully get useful tools that help you build your nodejs applications.

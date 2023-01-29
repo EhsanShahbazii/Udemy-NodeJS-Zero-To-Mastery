@@ -1,0 +1,23 @@
+1
+00:00:02,150 --> 00:00:08,360
+Now that we already had a pretty close look at nodejs and worked a lot with it,
+
+2
+00:00:08,570 --> 00:00:14,120
+let's take one step back and let's see how we can both make development a bit easier, how
+
+3
+00:00:14,120 --> 00:00:20,960
+we can speed that up a little bit and most importantly, how we can actually debug our nodejs apps
+
+4
+00:00:21,080 --> 00:00:28,530
+or how we can use various tools to understand better what's going on in our nodejs applications.
+
+5
+00:00:28,730 --> 00:00:34,290
+Because in this module, you will learn some tips and tricks which will hopefully help you write
+
+6
+00:00:34,320 --> 00:00:38,130
+nodejs applications in a very efficient manner.

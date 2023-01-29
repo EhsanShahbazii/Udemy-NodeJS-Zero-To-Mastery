@@ -1,0 +1,175 @@
+1
+00:00:02,310 --> 00:00:04,410
+So I still have my debugger up and running
+
+2
+00:00:04,440 --> 00:00:11,130
+and now that I gave you a brief overlook of how it works, let's actually send another message here. Hit send,
+
+3
+00:00:11,310 --> 00:00:13,790
+it breaks again because I didn't remove the breakpoint
+
+4
+00:00:13,860 --> 00:00:16,510
+and let's now fix that error we have.
+
+5
+00:00:16,740 --> 00:00:18,150
+I showed you how we can navigate,
+
+6
+00:00:18,150 --> 00:00:22,370
+so let's click this line here or this button to move to the next line.
+
+7
+00:00:22,380 --> 00:00:28,890
+Now it registers this code and here you also see that it doesn't immediately execute this function because
+
+8
+00:00:28,890 --> 00:00:34,770
+if I click that button again, we jump to the end of this function here and that makes a lot of
+
+9
+00:00:34,770 --> 00:00:41,700
+sense because as I mentioned, this function is just registered by nodejs to be executed in the future
+
+10
+00:00:41,820 --> 00:00:43,410
+once the file is read.
+
+11
+00:00:43,650 --> 00:00:48,290
+So for now, code execution will continue with the other lines.
+
+12
+00:00:48,410 --> 00:00:52,690
+Now the problem we want to solve is not inside of here though
+
+13
+00:00:52,710 --> 00:00:58,260
+but if you want to get notified once a part in here is reached, you can simply add a breakpoint there,
+
+14
+00:00:58,500 --> 00:01:02,060
+resume execution and it will break once it reaches that,
+
+15
+00:01:02,070 --> 00:01:06,340
+so once that callback is triggered because the right file operation is done.
+
+16
+00:01:06,510 --> 00:01:08,980
+But our problem of course is the message,
+
+17
+00:01:09,000 --> 00:01:09,690
+right,
+
+18
+00:01:09,700 --> 00:01:12,280
+and the message is not available here anymore,
+
+19
+00:01:12,600 --> 00:01:15,540
+so this analysis is actually not useful to us.
+
+20
+00:01:15,660 --> 00:01:21,480
+So let's remove that breakpoint and resume and let's again run this one more time
+
+21
+00:01:21,480 --> 00:01:27,090
+and now let's not resume execution but look into message and we see message is message and that looks
+
+22
+00:01:27,090 --> 00:01:28,000
+wrong,
+
+23
+00:01:28,020 --> 00:01:32,160
+we see that parsed body is message equals and then our value.
+
+24
+00:01:32,250 --> 00:01:39,720
+Now since this is what we stored in the message constant, we now can tell pretty clearly that our error
+
+25
+00:01:39,720 --> 00:01:45,190
+has to be stemming from that part here because we clearly have our value in here
+
+26
+00:01:45,300 --> 00:01:48,200
+but then we seem to be extracting the wrong piece.
+
+27
+00:01:48,510 --> 00:01:55,470
+Now split also does its job and you can even use the console here to for example run some commands,
+
+28
+00:01:55,470 --> 00:02:02,010
+you can run parsed body split equal sign here and see what this returns,
+
+29
+00:02:02,010 --> 00:02:06,610
+so you see you get an array with message and tist because I mistyped test.
+
+30
+00:02:06,690 --> 00:02:08,390
+Now this clearly tells you
+
+31
+00:02:08,400 --> 00:02:10,190
+ok so split is working,
+
+32
+00:02:10,320 --> 00:02:13,320
+I'm in theory getting all the values I need,
+
+33
+00:02:13,320 --> 00:02:20,940
+so the only thing that can be wrong now is the value I'm extracting here and indeed we see that message,
+
+34
+00:02:21,210 --> 00:02:25,600
+holds message which is incorrect, message the first element in the array
+
+35
+00:02:25,710 --> 00:02:28,410
+so I seem to be extracting the wrong element from the array
+
+36
+00:02:28,470 --> 00:02:33,530
+and indeed we are extracting the first one when we should be extracting the second one here.
+
+37
+00:02:33,540 --> 00:02:35,620
+So let's now change it to a one
+
+38
+00:02:35,640 --> 00:02:38,040
+and now we get this error fixed.
+
+39
+00:02:38,100 --> 00:02:44,610
+Obviously this is a bit of a constructed example but this is just to show you how you can use the debugger
+
+40
+00:02:44,730 --> 00:02:50,940
+to go through your code step by step, that you have to keep in mind that node doesn't execute line after
+
+41
+00:02:50,940 --> 00:02:51,330
+line
+
+42
+00:02:51,330 --> 00:02:57,600
+but as I explained multiple times now that it registers callbacks which are executed sometime in the future
+
+43
+00:02:57,910 --> 00:03:02,390
+and which should therefore also have to control with breakpoints if you want to look into them.
+
+44
+00:03:02,460 --> 00:03:08,830
+And with that, you should have some powerful tools for finding and fixing errors in your code.

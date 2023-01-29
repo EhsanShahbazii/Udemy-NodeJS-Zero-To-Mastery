@@ -1,0 +1,183 @@
+1
+00:00:02,110 --> 00:00:03,930
+Syntax errors can be very annoying
+
+2
+00:00:03,940 --> 00:00:07,190
+but most of the time, they're not that hard to fix.
+
+3
+00:00:07,210 --> 00:00:13,330
+Let's add a simple syntax error, here in app.js let's simply remove the t in const,
+
+4
+00:00:13,330 --> 00:00:15,990
+now all of a sudden, this is an invalid keyword,
+
+5
+00:00:16,000 --> 00:00:18,050
+it doesn't exist, it's not a keyword
+
+6
+00:00:18,130 --> 00:00:23,270
+and we already get some help in the IDE which is showing us something is wrong here.
+
+7
+00:00:23,560 --> 00:00:28,010
+Now if we hover over this, we see that a semi-colon is expected
+
+8
+00:00:28,090 --> 00:00:30,450
+and actually this is not that helpful
+
+9
+00:00:30,620 --> 00:00:35,020
+and this is simply because visual studio code thinks so that this is a variable
+
+10
+00:00:35,140 --> 00:00:40,470
+and since we have a variable in the same line, we should close this with a semi-colon
+
+11
+00:00:40,600 --> 00:00:46,550
+and now it actually doesn't show an error. But let's save this and let's try running our app with npm
+
+12
+00:00:46,690 --> 00:00:51,160
+start without that semi-colon we added. And you will see, it right away
+
+13
+00:00:51,180 --> 00:00:57,110
+crashes and in there we see unexpected identifier const server.
+
+14
+00:00:57,160 --> 00:01:03,040
+So in the end, whilst it doesn't clearly tell us that we forgot the t here because it's not smart enough
+
+15
+00:01:03,040 --> 00:01:05,120
+to understand that this is the error here,
+
+16
+00:01:05,200 --> 00:01:08,930
+we still see that the error seems to be stemming from this line
+
+17
+00:01:09,190 --> 00:01:14,890
+and in such cases, as dumb as it sounds, you should simply take a closer look at this line and see what
+
+18
+00:01:14,890 --> 00:01:15,980
+could be wrong there
+
+19
+00:01:16,180 --> 00:01:18,270
+and you should quickly be able to see
+
+20
+00:01:18,430 --> 00:01:19,780
+I forgot a t here.
+
+21
+00:01:20,170 --> 00:01:21,730
+So these are syntax errors,
+
+22
+00:01:22,030 --> 00:01:29,400
+other errors would be that you maybe go to the routes.js file and let's say you forget a closing curly
+
+23
+00:01:29,400 --> 00:01:30,390
+brace here.
+
+24
+00:01:30,390 --> 00:01:34,680
+Now again visual studio code does complain and does show an error over there,
+
+25
+00:01:34,920 --> 00:01:39,590
+if we jump there we see at the end that the closing curly brace is expected.
+
+26
+00:01:39,600 --> 00:01:44,130
+Now it's not expected at this point where it's showing this message but it's expected somewhere in the
+
+27
+00:01:44,130 --> 00:01:46,670
+file and whilst it can be cumbersome,
+
+28
+00:01:46,680 --> 00:01:52,170
+you should then check your block statements like this if statement and see if there are all closed correctly.
+
+29
+00:01:52,710 --> 00:01:57,870
+In visual studio code, you also get some help because if you click next to such a curly brace, you'll see
+
+30
+00:01:57,870 --> 00:02:03,860
+that this line gets highlighted and it actually shows you where it thinks that this is getting closed
+
+31
+00:02:03,930 --> 00:02:06,570
+and this is far too much at the bottom here
+
+32
+00:02:06,570 --> 00:02:14,610
+for example. Again if you run this, you will see that it crashes and there, you also see unexpected token
+
+33
+00:02:15,090 --> 00:02:16,750
+and it points us at routes.js
+
+34
+00:02:16,780 --> 00:02:17,170
+.
+
+35
+00:02:17,220 --> 00:02:19,650
+and then you see the line number too.
+
+36
+00:02:19,920 --> 00:02:26,370
+So here it points us at line 52 and it basically shows us the same place as visual studio code which
+
+37
+00:02:26,370 --> 00:02:27,600
+is the wrong place
+
+38
+00:02:27,780 --> 00:02:33,870
+but in such a case here, you should really take the IDE help, see that error message and then go through
+
+39
+00:02:33,870 --> 00:02:35,430
+your file and see
+
+40
+00:02:35,440 --> 00:02:41,850
+hmm where could I be missing a character or where do I have an extra closing curly brace or something
+
+41
+00:02:41,850 --> 00:02:42,540
+like that
+
+42
+00:02:42,690 --> 00:02:47,090
+and eventually you should be able to find this error and therefore of course fix it.
+
+43
+00:02:47,370 --> 00:02:53,820
+So syntax errors should always result in an error message and then that can sometimes be hard to find
+
+44
+00:02:53,820 --> 00:02:54,490
+them,
+
+45
+00:02:54,560 --> 00:03:02,880
+often it's like a typo, a mistyped variable name of a variable that therefore doesn't exist or missing
+
+46
+00:03:02,880 --> 00:03:08,190
+or extra characters but you can find them and it just takes some time to go through your file.

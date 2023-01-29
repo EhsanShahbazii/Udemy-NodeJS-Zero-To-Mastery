@@ -1,0 +1,87 @@
+1
+00:00:02,200 --> 00:00:08,170
+In the last lectures we worked a bit on the project setup and how we could use external packages which
+
+2
+00:00:08,170 --> 00:00:11,430
+is super important and which we'll do a lot throughout this course.
+
+3
+00:00:11,620 --> 00:00:16,120
+But now I want to have a look at something else which helps us during development and that is of course
+
+4
+00:00:16,460 --> 00:00:17,430
+fixing errors,
+
+5
+00:00:17,440 --> 00:00:23,830
+we need to understand how we can find and fix errors in our code because there always will be errors,
+
+6
+00:00:24,010 --> 00:00:27,600
+you will never write a program that just runs perfectly.
+
+7
+00:00:27,670 --> 00:00:33,550
+For this, we first of all have to understand that there are different types of errors so that you can
+
+8
+00:00:33,550 --> 00:00:36,830
+understand how each type can be tackled.
+
+9
+00:00:36,910 --> 00:00:42,990
+The first kind of error you often get or you sometimes getting your programs are a syntax error,
+
+10
+00:00:43,180 --> 00:00:49,810
+this is if you have a typo in your code or you forget like a closing curly brace or anything like
+
+11
+00:00:49,810 --> 00:00:50,430
+that,
+
+12
+00:00:50,500 --> 00:00:56,490
+so you have an error which should automatically be thrown when you try to run your project.
+
+13
+00:00:56,650 --> 00:01:01,840
+Most of the time, these are pretty easy to fix but we'll have a look at this and how we find and fix
+
+14
+00:01:01,840 --> 00:01:03,670
+them in a second.
+
+15
+00:01:03,760 --> 00:01:09,330
+The second category of errors are runtime errors, at least this is how I like to call them.
+
+16
+00:01:09,490 --> 00:01:16,060
+Now these are errors which are not typos but where you try to execute some code which will just break
+
+17
+00:01:16,060 --> 00:01:23,700
+when it runs and I'll show an example for this in a second too. The third kind of errors are logical errors.
+
+18
+00:01:23,700 --> 00:01:28,970
+Now these are the most difficult ones because there, you will never see an error message,
+
+19
+00:01:29,070 --> 00:01:32,360
+your app just doesn't work the way it should
+
+20
+00:01:32,700 --> 00:01:39,660
+and it can be hard to find these but I will also show you some tool which can help you with that in
+
+21
+00:01:39,660 --> 00:01:40,630
+this module.
+
+22
+00:01:41,040 --> 00:01:47,210
+So let's now start with syntax errors and let's see how we can find these and fix these.

@@ -1,0 +1,63 @@
+1
+00:00:02,360 --> 00:00:07,810
+There's one more feature about the nodejs debugger which I also haven't shown you yet but which I of course
+
+2
+00:00:07,820 --> 00:00:12,320
+don't want to forget. If you start debugging here
+
+3
+00:00:12,530 --> 00:00:18,830
+and here I just use the shortcut and you place a breakpoint anywhere in your app and then do something
+
+4
+00:00:18,830 --> 00:00:20,580
+to trigger that breakpoint,
+
+5
+00:00:20,690 --> 00:00:24,710
+I showed you that you can look into all these variables and that you can look into them in the debug
+
+6
+00:00:24,710 --> 00:00:30,620
+console without changing them. Well sometimes you might want to change them
+
+7
+00:00:30,890 --> 00:00:38,560
+and that can be done by going to the debug view here and then by simply typing in there.
+
+8
+00:00:38,570 --> 00:00:44,280
+Now for example, the parsed body holds this string and you can't just change it
+
+9
+00:00:44,330 --> 00:00:49,330
+and now this will affect the runtime as you can see if you hover over this.
+
+10
+00:00:49,340 --> 00:00:55,040
+So now if I just resume execution with my code which doesn't have a bug right now and I go back to
+
+11
+00:00:55,040 --> 00:01:01,550
+my explorer view here, then you will see that I stored testing here which is the value I edited
+
+12
+00:01:01,610 --> 00:01:08,840
+in the debugger. So you can actually manipulate the values there of the variables and so on if you need
+
+13
+00:01:08,840 --> 00:01:09,540
+to,
+
+14
+00:01:09,800 --> 00:01:15,620
+you can do that because this of course allows you to make sure that you can quickly test something.
+
+15
+00:01:15,710 --> 00:01:20,730
+This is just another useful feature which I wanted to share with you since it can help you with debugging
+
+16
+00:01:20,730 --> 00:01:23,700
+your code, being able to manipulate some values there.

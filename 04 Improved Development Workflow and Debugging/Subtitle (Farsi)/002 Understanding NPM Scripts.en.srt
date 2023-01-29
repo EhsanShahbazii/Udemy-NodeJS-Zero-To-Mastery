@@ -1,0 +1,403 @@
+1
+00:00:02,170 --> 00:00:08,810
+For this module I'm back in the application or the project we worked on in the last core section and you
+
+2
+00:00:08,810 --> 00:00:15,190
+can find my state attached to this video so that you can start right at the same point as I do.
+
+3
+00:00:15,440 --> 00:00:18,900
+So it is just the code we wrote over the last lectures
+
+4
+00:00:18,980 --> 00:00:25,280
+and one thing we constantly had to do in the last section or throughout this course was that we always
+
+5
+00:00:25,280 --> 00:00:33,890
+had to run node app.js to start our well app or our node application with that file.
+
+6
+00:00:33,890 --> 00:00:41,240
+Now this is certainly ok and not too much work but it actually is possible to define some scripts in
+
+7
+00:00:41,240 --> 00:00:45,190
+a nodejs project that can help us with tasks like this,
+
+8
+00:00:45,230 --> 00:00:50,620
+we can also use them for other tasks but especially for this, they can be useful right now
+
+9
+00:00:50,720 --> 00:00:55,120
+and for that we have to use a feature we didn't use thus far.
+
+10
+00:00:55,370 --> 00:01:04,490
+We have to use npm, npm stands for node package manager and it is installed together with nodejs, so
+
+11
+00:01:04,490 --> 00:01:05,960
+you don't need to do anything,
+
+12
+00:01:05,960 --> 00:01:08,000
+you got this installed already.
+
+13
+00:01:08,000 --> 00:01:15,890
+Now we will also use npm to install some additional third party packages to our project soon, so packages
+
+14
+00:01:15,890 --> 00:01:18,930
+that are not included in nodes core,
+
+15
+00:01:18,950 --> 00:01:29,240
+so not part of nodes core modules but we can also use npm to initialize a so-called node project or
+
+16
+00:01:29,240 --> 00:01:31,870
+to add some extra features to it
+
+17
+00:01:31,910 --> 00:01:39,050
+to be precise because we obviously already got a node project here but now in this project, in a terminal
+
+18
+00:01:39,260 --> 00:01:44,400
+navigated into this project, you can run npm init.
+
+19
+00:01:44,450 --> 00:01:47,090
+Now this will not delete your code or anything like that,
+
+20
+00:01:47,090 --> 00:01:48,080
+no worries,
+
+21
+00:01:48,080 --> 00:01:51,840
+simply hit enter and you'll be prompted with a couple of questions here.
+
+22
+00:01:51,950 --> 00:01:55,330
+It'll ask you first of all for a name of your package
+
+23
+00:01:55,400 --> 00:01:58,670
+and for now you can simply translate this with project name.
+
+24
+00:01:58,670 --> 00:02:02,990
+Now you can pick any name you want, the part in the parentheses here
+
+25
+00:02:03,060 --> 00:02:05,930
+always is the suggestion, the default
+
+26
+00:02:05,930 --> 00:02:08,730
+it will pick if you don't choose your own name,
+
+27
+00:02:08,780 --> 00:02:12,270
+so if I just hit enter here, it will take that default.
+
+28
+00:02:12,470 --> 00:02:15,420
+So you can basically do that for all these questions,
+
+29
+00:02:15,530 --> 00:02:18,260
+for the description, you can leave that empty
+
+30
+00:02:18,290 --> 00:02:24,550
+then it will have no default text either but you can also enter some text like complete nodejs
+
+31
+00:02:24,570 --> 00:02:32,970
+guide, this is what this course is and then define an entry point with fs for example. You can leave
+
+32
+00:02:32,970 --> 00:02:37,750
+the task command empty, leave that empty, keywords you can choose some if you want,
+
+33
+00:02:37,830 --> 00:02:42,900
+you can put your name into the offer field though this is also not required and you can always choose
+
+34
+00:02:42,900 --> 00:02:43,470
+a license
+
+35
+00:02:43,470 --> 00:02:46,030
+but if you don't plan on sharing this project publicly,
+
+36
+00:02:46,030 --> 00:02:47,600
+this also doesn't really matter.
+
+37
+00:02:47,910 --> 00:02:54,210
+So with this what you get is this package.json file and there you also see all these settings
+
+38
+00:02:54,210 --> 00:02:58,270
+or configurations you just set up and you can of course edit them there too,
+
+39
+00:02:58,380 --> 00:03:02,160
+so if you had a typo in your description, you can just edit it here.
+
+40
+00:03:02,250 --> 00:03:08,880
+Now this is using the json format which is a special kind of data format which basically looks a
+
+41
+00:03:08,880 --> 00:03:13,750
+lot like javascript objects and it pretty much is based on that,
+
+42
+00:03:13,770 --> 00:03:16,200
+there is one important thing to understand though,
+
+43
+00:03:16,260 --> 00:03:24,330
+the keys are always put between double quotation marks and so are the values, except for numbers or arrays
+
+44
+00:03:24,360 --> 00:03:28,190
+or true or false which are not put between these
+
+45
+00:03:28,260 --> 00:03:29,100
+but that's too much
+
+46
+00:03:29,100 --> 00:03:32,780
+for now, we can ignore that for now just so that you understand what you got there,
+
+47
+00:03:32,880 --> 00:03:36,250
+it's basically a configuration file for your project.
+
+48
+00:03:36,270 --> 00:03:39,070
+Now what does this configuration file give you?
+
+49
+00:03:39,330 --> 00:03:41,600
+Well let's clear the console here,
+
+50
+00:03:41,880 --> 00:03:48,450
+with this configuration file, you'll see that we got a scripts section there which has one default script
+
+51
+00:03:48,540 --> 00:03:50,340
+that won't do anything for now,
+
+52
+00:03:50,580 --> 00:03:56,190
+you can add your own scripts here and I will tell you how to execute them too of course.
+
+53
+00:03:56,190 --> 00:04:02,040
+For that, let's add a comma after this test script and add a new script name which has to be put between
+
+54
+00:04:02,070 --> 00:04:06,220
+double quotation marks and there, let's name it start. Now
+
+55
+00:04:06,230 --> 00:04:10,430
+start is actually a special script name as you will see in a second,
+
+56
+00:04:10,530 --> 00:04:14,950
+so make sure to type this correctly and then between the quotation marks,
+
+57
+00:04:15,030 --> 00:04:17,880
+you type a command that should be executed.
+
+58
+00:04:17,880 --> 00:04:20,830
+So this is a command which you could also type down there
+
+59
+00:04:21,030 --> 00:04:22,490
+and there we always have to type
+
+60
+00:04:22,490 --> 00:04:23,970
+node app.js,
+
+61
+00:04:24,030 --> 00:04:28,230
+so let's now put that between these double quotation marks here
+
+62
+00:04:28,270 --> 00:04:29,890
+node app.js,
+
+63
+00:04:29,910 --> 00:04:31,740
+like this.
+
+64
+00:04:31,830 --> 00:04:33,870
+With that save that file
+
+65
+00:04:34,170 --> 00:04:42,930
+and then you can run npm start. Start is a reserved name and this will always look for such a start
+
+66
+00:04:43,020 --> 00:04:43,850
+script here.
+
+67
+00:04:44,190 --> 00:04:49,610
+And if you do that, it will as you can see here just execute node app.js.
+
+68
+00:04:49,710 --> 00:04:55,620
+So it does the same you had before but now you can always just well run this command instead of running
+
+69
+00:04:55,620 --> 00:04:55,890
+node
+
+70
+00:04:55,890 --> 00:05:00,870
+app.js. Not that much of a saved characters but a few at least
+
+71
+00:05:00,930 --> 00:05:04,590
+and it's also a good practice because if you ever share this project,
+
+72
+00:05:04,590 --> 00:05:10,350
+it's pretty common that people just have to run npm start and that they don't have to guess which of your
+
+73
+00:05:10,350 --> 00:05:13,180
+javascript files is the entry file.
+
+74
+00:05:13,740 --> 00:05:19,200
+So you can quit this with control c of course as always and I mentioned that this would be a special
+
+75
+00:05:19,260 --> 00:05:20,340
+script name.
+
+76
+00:05:20,340 --> 00:05:23,780
+You can add more scripts, also without using a special name,
+
+77
+00:05:23,820 --> 00:05:25,820
+you can indeed choose any name you want,
+
+78
+00:05:25,890 --> 00:05:31,710
+just make sure to always wrap the name in double quotation marks and that it does not contain any blanks
+
+79
+00:05:31,800 --> 00:05:33,490
+or whitespaces.
+
+80
+00:05:33,560 --> 00:05:39,610
+So for example we could have start-server.
+
+81
+00:05:39,610 --> 00:05:41,930
+Now this can also run node app.js,
+
+82
+00:05:41,970 --> 00:05:46,350
+so it will do the exact same as this script and therefore it's of course redundant
+
+83
+00:05:46,360 --> 00:05:47,940
+but I want to show you something
+
+84
+00:05:48,240 --> 00:05:54,730
+and now if you try running npm start-server, you'll get an error.
+
+85
+00:05:55,090 --> 00:06:01,930
+You basically get an error that is not a known command and indeed it isn't because just typing
+
+86
+00:06:01,930 --> 00:06:04,030
+the script name here will not work,
+
+87
+00:06:04,030 --> 00:06:04,630
+start
+
+88
+00:06:04,650 --> 00:06:07,210
+just was the special case as I mentioned.
+
+89
+00:06:07,220 --> 00:06:13,890
+Indeed for normal scripts with their own custom names, you have to run npm run and then your script name,
+
+90
+00:06:14,020 --> 00:06:17,960
+so npm run start-server will now also start the server.
+
+91
+00:06:17,980 --> 00:06:23,770
+Now as I mentioned, this is of course redundant, npm start is way shorter but I want you to understand
+
+92
+00:06:23,920 --> 00:06:25,880
+how you can add your own scripts.
+
+93
+00:06:26,020 --> 00:06:32,800
+Now if you worked with something like angular or react or vue or any modern frontend development workflow,
+
+94
+00:06:33,130 --> 00:06:38,620
+you will have seen that you use such scripts a lot to trigger build workflows for your projects for
+
+95
+00:06:38,620 --> 00:06:43,620
+example and indeed you can use that for all kinds of tasks to want to execute
+
+96
+00:06:43,750 --> 00:06:48,550
+but for now we'll not dive deeper into that and if you haven't worked with angular or react, it's
+
+97
+00:06:48,550 --> 00:06:48,810
+also
+
+98
+00:06:48,850 --> 00:06:49,780
+no problem,
+
+99
+00:06:49,780 --> 00:06:51,340
+you will see what I mean
+
+100
+00:06:51,340 --> 00:06:56,900
+later in this course when I explore node's functionality as a build tool a bit more.
+
+101
+00:06:56,920 --> 00:07:01,420
+For now let's just use that npm start script to start our application conveniently.

@@ -1,0 +1,331 @@
+1
+00:00:02,100 --> 00:00:05,760
+Now we worked with the debugger a bit and after this lecture,
+
+2
+00:00:05,760 --> 00:00:12,270
+you'll also find a lecture with a link to a more detailed explanation of the debugging capabilities
+
+3
+00:00:12,300 --> 00:00:18,000
+Visual Studio Code gives you. Don't learn them by heart but feel free to explore them to get the most
+
+4
+00:00:18,090 --> 00:00:20,390
+out of the debugger for you.
+
+5
+00:00:20,400 --> 00:00:26,440
+Now there are two things I want to show you or I want to draw your attention to,
+
+6
+00:00:26,490 --> 00:00:28,440
+one is something you already saw.
+
+7
+00:00:28,570 --> 00:00:32,340
+Let's add a breakpoint again and again submit this,
+
+8
+00:00:32,340 --> 00:00:37,260
+I already showed you that you can execute code here in that debug console at the bottom,
+
+9
+00:00:37,350 --> 00:00:41,070
+so you don't see the console logs here, you can also execute code here.
+
+10
+00:00:41,160 --> 00:00:45,070
+For example you can type variable name here,
+
+11
+00:00:45,120 --> 00:00:50,340
+so something which is available in your code at this point of time, in general something which you
+
+12
+00:00:50,340 --> 00:00:53,940
+can find in local or in block here or in global,
+
+13
+00:00:53,940 --> 00:01:00,690
+so the things you find here like message, you can also type that down there and hit enter to print its
+
+14
+00:01:00,690 --> 00:01:01,500
+value.
+
+15
+00:01:01,740 --> 00:01:06,440
+And this is of course not really useful for printing because you can see the value on the left too
+
+16
+00:01:06,960 --> 00:01:11,890
+but as I showed you for parsed body, you cannot just print the value,
+
+17
+00:01:11,910 --> 00:01:17,790
+you can also run operations on it that will not affect your code as it's running but that will allow
+
+18
+00:01:17,790 --> 00:01:25,040
+you to look into it or try out some transformation before you add it to your real code.
+
+19
+00:01:25,080 --> 00:01:30,990
+So whatever you run down there does not affect the code you run up here but it is nice for you to understand
+
+20
+00:01:30,990 --> 00:01:31,760
+your code.
+
+21
+00:01:32,650 --> 00:01:38,570
+The other thing I want to show you is that for now at the moment, if we change something in our code
+
+22
+00:01:38,570 --> 00:01:46,400
+here, let's say we add a blank line, our debugger doesn't restart but with nodemon we actually have
+
+23
+00:01:46,400 --> 00:01:49,370
+a package that does allow us to restart.
+
+24
+00:01:49,400 --> 00:01:53,700
+So it would be nice if the debugger would also restart if we change our code
+
+25
+00:01:53,750 --> 00:01:59,720
+otherwise it just behaves differently than the rest of our app and we have to restart it manually. Now to
+
+26
+00:01:59,720 --> 00:02:00,570
+restart it,
+
+27
+00:02:00,680 --> 00:02:03,340
+let's go back to the explorer view for a second,
+
+28
+00:02:04,480 --> 00:02:10,190
+we have to go to debug and then add a configuration for nodejs.
+
+29
+00:02:10,260 --> 00:02:15,300
+This adds the .vs code folder with the launch json file
+
+30
+00:02:15,390 --> 00:02:22,020
+and this allows you to configure debugging for this project and how it behaves. You can click on add configuration
+
+31
+00:02:22,020 --> 00:02:27,880
+to see some demo settings you can add but you can also just type in there and one setting you can add
+
+32
+00:02:27,900 --> 00:02:30,750
+is restart and you can set it to true,
+
+33
+00:02:30,990 --> 00:02:33,940
+you just have to make sure that you also add some other fields.
+
+34
+00:02:34,020 --> 00:02:40,500
+For example you have to make sure that nodemon is used and for that, you set the runtime executable not to
+
+35
+00:02:40,500 --> 00:02:43,560
+node which would be the default but to nodemon
+
+36
+00:02:43,560 --> 00:02:45,730
+here. So now it'll use nodemon
+
+37
+00:02:45,900 --> 00:02:48,640
+and it will restart the debugger when a change is detected,
+
+38
+00:02:48,750 --> 00:02:54,930
+so that not just the server is restarted but also the debugging process. Here by the way in this configuration,
+
+39
+00:02:55,020 --> 00:02:59,540
+you can also define that it should always start with the app.js file
+
+40
+00:02:59,640 --> 00:03:04,740
+so that you can even have the routes.js file selected while starting debugging and it will still
+
+41
+00:03:04,740 --> 00:03:10,560
+go for the app.js file which is more convenient than always selecting the file you want to debug
+
+42
+00:03:10,710 --> 00:03:15,740
+first before starting the debugger and you always have to pick the app.js file because that starts your server.
+
+43
+00:03:15,840 --> 00:03:19,890
+So you can't say I'm going to look into the routes.js file so I'll start with that,
+
+44
+00:03:19,890 --> 00:03:24,320
+it always has to be the app.js file because you always have to start the entire server,
+
+45
+00:03:24,330 --> 00:03:29,790
+so here you can define that it will always pick that no matter which file you have currently open.
+
+46
+00:03:30,300 --> 00:03:36,630
+You can also change the console where things are logged to to the integrated terminal which is the normal
+
+47
+00:03:36,630 --> 00:03:37,340
+terminal.
+
+48
+00:03:37,470 --> 00:03:44,000
+With this if you save all of that and you now start debugging, it fails though
+
+49
+00:03:44,160 --> 00:03:47,160
+and the reason for this is that it will not use the local nodemon
+
+50
+00:03:47,190 --> 00:03:49,080
+but it looks for it globally.
+
+51
+00:03:49,140 --> 00:03:55,360
+Now to add it globally, you have to run an install nodemon -g
+
+52
+00:03:55,530 --> 00:04:00,370
+and now important, on Mac and Linux you might need to add sudo in front of this,
+
+53
+00:04:00,390 --> 00:04:06,210
+on Windows you don't, to get the right permissions to install this. With that you might be prompted for your password
+
+54
+00:04:07,490 --> 00:04:12,650
+and now it will install nodemon globally which makes sure that if you ever run nodemon in the terminal
+
+55
+00:04:12,650 --> 00:04:17,450
+now, it will not fail with a not found error but instead it will find it
+
+56
+00:04:17,600 --> 00:04:22,550
+and therefore now you can also run this debugger here which will use the global version and you'll
+
+57
+00:04:22,550 --> 00:04:32,170
+see it now opens terminal, starts nodemon and if you now add a breakpoint somewhere and submit this
+
+58
+00:04:32,190 --> 00:04:33,930
+again it still works
+
+59
+00:04:33,940 --> 00:04:36,610
+as before, just important,
+
+60
+00:04:36,610 --> 00:04:38,420
+you now see the terminal here
+
+61
+00:04:38,440 --> 00:04:44,410
+logs all the things. You can still use the debug console to output messages though, so you can still work
+
+62
+00:04:45,100 --> 00:04:45,640
+with this
+
+63
+00:04:45,640 --> 00:04:51,810
+as I showed it to you, so this is not stopped from working, this still is something you can use but
+
+64
+00:04:51,820 --> 00:04:58,330
+in the terminal, you get the normal output and you have to use the terminal because if you now change something,
+
+65
+00:05:00,350 --> 00:05:04,570
+it restarts the debugger and node and these are two separate processes
+
+66
+00:05:04,580 --> 00:05:12,170
+and if you stop the debugger, nodemon has to quit separately or has to exit separately and you do
+
+67
+00:05:12,170 --> 00:05:13,200
+this by hitting control
+
+68
+00:05:13,190 --> 00:05:18,410
+c here and this couldn't be done in the debug console which is why you have to funnel this to the
+
+69
+00:05:18,410 --> 00:05:19,290
+terminal.
+
+70
+00:05:19,310 --> 00:05:21,120
+So that's just something to keep in mind,
+
+71
+00:05:21,320 --> 00:05:26,810
+you have to stop that process separately which you can do from the terminal which is why if you are
+
+72
+00:05:26,810 --> 00:05:33,320
+using that nodemon process, you should use the integrated terminal and you can read more about that in
+
+73
+00:05:33,370 --> 00:05:36,470
+that detailed visual studio code debugging article
+
+74
+00:05:36,470 --> 00:05:41,750
+but now you have a setup where you have a debugger attached to your program that will restart if you
+
+75
+00:05:41,840 --> 00:05:44,150
+edit something, where the server will restart
+
+76
+00:05:44,180 --> 00:05:51,050
+if you edit something and where you have now all the tools you should need to debug your node app and
+
+77
+00:05:51,050 --> 00:05:53,750
+hopefully solve any errors you get.
+
+78
+00:05:53,750 --> 00:06:00,320
+Now one important note, for the rest of the course I'll mostly use npm start and not have the debugger
+
+79
+00:06:00,320 --> 00:06:01,770
+attached all the time,
+
+80
+00:06:01,820 --> 00:06:07,880
+I will only use that if there is some error I want to particularly debug with the debugger and want to find
+
+81
+00:06:07,880 --> 00:06:13,100
+with the debugger. So you can use it as a default, always on option,
+
+82
+00:06:13,100 --> 00:06:16,900
+I prefer to not to use it to not have that extra panel and so on
+
+83
+00:06:16,970 --> 00:06:19,460
+but to really just use the server and work on that.

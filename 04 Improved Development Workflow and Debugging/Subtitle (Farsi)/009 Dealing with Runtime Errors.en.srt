@@ -1,0 +1,135 @@
+1
+00:00:02,210 --> 00:00:09,690
+The next category are runtime errors and a great example for this can be shown with the res write method
+
+2
+00:00:09,750 --> 00:00:10,630
+here.
+
+3
+00:00:10,760 --> 00:00:19,600
+Now as I mentioned, you have to return here to prevent the execution of the code after this statement
+
+4
+00:00:19,630 --> 00:00:23,510
+otherwise and this is something node specific of course, you would
+
+5
+00:00:23,690 --> 00:00:27,400
+end a request here but the code execution would continue
+
+6
+00:00:27,560 --> 00:00:31,570
+and eventually we would reach this line and this is no syntax error,
+
+7
+00:00:31,570 --> 00:00:36,390
+this is correct but if we run our code here, seems to work right,
+
+8
+00:00:36,440 --> 00:00:38,710
+there is no syntax error after all.
+
+9
+00:00:38,870 --> 00:00:44,480
+But if we now visit our page, eventually it breaks here and this is the point where it should go back
+
+10
+00:00:44,480 --> 00:00:51,080
+to your code and should find an error message there too. And this error message is something you
+
+11
+00:00:51,080 --> 00:00:57,740
+shouldn't just take and paste into the Q & A section but actually read it.
+
+12
+00:00:57,740 --> 00:01:00,800
+A lot of the error messages are indeed helpful,
+
+13
+00:01:00,800 --> 00:01:04,100
+you just need to know how to read them, at the bottom
+
+14
+00:01:04,100 --> 00:01:10,310
+you always find uninteresting stuff I'd say but you have to scroll to the top of the error message and
+
+15
+00:01:10,310 --> 00:01:13,130
+all of a sudden, it should get more meaningful.
+
+16
+00:01:13,130 --> 00:01:19,910
+For example here, you see the error code which already indicates that it's something with headers being
+
+17
+00:01:19,910 --> 00:01:27,250
+sent and then here, you actually find a detailed error message, cannot set headers after they are set
+
+18
+00:01:27,290 --> 00:01:34,100
+to the client and then you see that it was caused by a call to set header and unfortunately, the line
+
+19
+00:01:34,100 --> 00:01:36,500
+numbers don't help you, here at least
+
+20
+00:01:36,590 --> 00:01:38,310
+but then it does help you here,
+
+21
+00:01:38,480 --> 00:01:45,080
+you see it's in the request handler and there it points at the routes.js file line 32. And now this is the
+
+22
+00:01:45,080 --> 00:01:46,630
+point where you can dive in and see,
+
+23
+00:01:46,670 --> 00:01:48,640
+ok I'm calling set header here,
+
+24
+00:01:48,740 --> 00:01:54,100
+now since it's complaining that I can't set them after they are sent to the client,
+
+25
+00:01:54,170 --> 00:02:00,230
+I should look well in the code before this statement because it looks like I'm finishing my response
+
+26
+00:02:00,230 --> 00:02:08,810
+there for this example. And indeed at some point you should find this statement and see I do actually
+
+27
+00:02:08,900 --> 00:02:15,110
+not finish my code execution after this statement which is not per se a problem but it becomes a problem
+
+28
+00:02:15,370 --> 00:02:20,870
+if in the following code, I then work on my response again as I'm doing it here.
+
+29
+00:02:20,900 --> 00:02:28,130
+So now this is the point where we can fix this by stopping the code execution or by wrapping this in an
+
+30
+00:02:28,160 --> 00:02:31,520
+extra if statement which is guaranteed to not run
+
+31
+00:02:31,640 --> 00:02:37,690
+if we make it into this statement. And now with that, we can of course restart our server
+
+32
+00:02:37,700 --> 00:02:39,310
+or actually we don't need to,
+
+33
+00:02:39,380 --> 00:02:42,060
+we got nodemon now so you don't need to do that
+
+34
+00:02:42,100 --> 00:02:44,860
+and now if you reload your page, it will work again.
