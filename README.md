@@ -7,6 +7,13 @@ Docs language: Farsi
 [NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)](https://www.udemy.com/course/nodejs-the-complete-guide/)
 
 ## Chapters (Farsi)
+
+- ### [01 Introduction](01%20Introduction)
+   > 2023/01/07
+   
+- ### [02 Optional_ JavaScript - A Quick Refresher](02%20Optional_%20JavaScript%20-%20A%20Quick%20Refresher)
+  > 2023/01/11
+  
 - ### [03 Understanding the Basics](03%20Understanding%20the%20Basics)
   - [003 Creating a Node Server](03%20Understanding%20the%20Basics/003%20Creating%20a%20Node%20Server.md)
   > 2023/01/13
@@ -20,6 +27,9 @@ Docs language: Farsi
   - [012 Understanding Event Driven Code Execution](03%20Understanding%20the%20Basics/012%20Understanding%20Event%20Driven%20Code%20Execution.md)
   - [013 Blocking and Non-Blocking Code](03%20Understanding%20the%20Basics/013%20Blocking%20and%20Non-Blocking%20Code.md)
   - [015 Using the Node Modules System](03%20Understanding%20the%20Basics/015%20Using%20the%20Node%20Modules%20System.md)
+  > 2023/01/15
+  
+- ### [04 Improved Development Workflow and Debugging](04%20Improved%20Development%20Workflow%20and%20Debugging)
   > 2023/01/15
   
 - ### [05 Working with Express.js](05%20Working%20with%20Express.js)
@@ -63,9 +73,12 @@ Docs language: Farsi
   - [008 Refactoring the File Storage Code](07%20The%20Model%20View%20Controller%20(MVC)/008%20Refactoring%20the%20File%20Storage%20Code.md)
   > 2023/01/27
    
+- ### [08 Optional_ Enhancing the App](08%20Optional_%20Enhancing%20the%20App)
+  > 2023/01/29
+   
 ## Subtitles (Farsi)
   - [01 Introduction](01%20Introduction/Subtitles%20(Farsi))
-  - [02 Optional_ JavaScript - A Quick Refresher](02%20Optional_%20JavaScript%20-%20A%20Quick Refresher/Subtitles%20(Farsi))
+  - [02 Optional_ JavaScript - A Quick Refresher](02%20Optional_%20JavaScript%20-%20A%20Quick%20Refresher/Subtitles%20(Farsi))
   - [03 Understanding the Basics](03%20Understanding%20the%20Basics/Subtitles%20(Farsi))
   - [04 Improved Development Workflow and Debugging](04%20Improved%20Development%20Workflow%20and%20Debugging/Subtitles%20(Farsi))
   - [05 Working with Express.js](05%20Working%20with%20Express.js/Subtitles%20(Farsi))
