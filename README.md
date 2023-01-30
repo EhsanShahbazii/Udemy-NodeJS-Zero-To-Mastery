@@ -75,6 +75,11 @@ Docs language: Farsi
    
 - ### [08 Optional_ Enhancing the App](08%20Optional_%20Enhancing%20the%20App)
   > 2023/01/29
+  
+- ### [09 Dynamic Routes & Advanced Models](09%20Dynamic%20Routes%20&%20Advanced%20Models)
+  - [004 Adding the Product ID to the Path](09%20Dynamic%20Routes%20&%20Advanced%20Models/004%20Adding%20the%20Product%20ID%20to%20the%20Path.md)
+  - [005 Extracting Dynamic Params](09%20Dynamic%20Routes%20&%20Advanced%20Models/005%20Extracting%20Dynamic%20Params.md)
+  > 2023/01/31
    
 ## Subtitles (Farsi)
   - [01 Introduction](01%20Introduction/Subtitles%20(Farsi))
@@ -85,3 +90,4 @@ Docs language: Farsi
   - [06 Working with Dynamic Content & Adding Templating Engines](06%20Working%20with%20Dynamic%20Content%20&%20Adding%20Templating%20Engines/Subtitles%20(Farsi))
   - [07 The Model View Controller (MVC)](07%20The%20Model%20View%20Controller%20(MVC)/Subtitles%20(Farsi))
   - [08 Optional_ Enhancing the App](08%20Optional_%20Enhancing%20the%20App/Subtitles%20(Farsi))
+  - [09 Dynamic Routes & Advanced Models](09%20Dynamic%20Routes%20&%20Advanced%20Models/Subtitles%20(Farsi))
