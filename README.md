@@ -79,6 +79,7 @@ Docs language: Farsi
 - ### [09 Dynamic Routes & Advanced Models](09%20Dynamic%20Routes%20&%20Advanced%20Models)
   - [004 Adding the Product ID to the Path](09%20Dynamic%20Routes%20&%20Advanced%20Models/004%20Adding%20the%20Product%20ID%20to%20the%20Path.md)
   - [005 Extracting Dynamic Params](09%20Dynamic%20Routes%20&%20Advanced%20Models/005%20Extracting%20Dynamic%20Params.md)
+  - [006 Loading Product Detail Data.md](09%20Dynamic%20Routes%20&%20Advanced%20Models/006%20Loading%20Product%20Detail%20Data.md)
   > 2023/01/31
    
 ## Subtitles (Farsi)
