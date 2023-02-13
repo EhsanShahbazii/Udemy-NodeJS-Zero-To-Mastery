@@ -82,6 +82,8 @@ Docs language: Farsi
   - [005 Extracting Dynamic Params](09%20Dynamic%20Routes%20&%20Advanced%20Models/005%20Extracting%20Dynamic%20Params.md)
   - [006 Loading Product Detail Data.md](09%20Dynamic%20Routes%20&%20Advanced%20Models/006%20Loading%20Product%20Detail%20Data.md)
   > 2023/01/31
+  - [007 Rendering the Product Detail View](09%20Dynamic%20Routes%20&%20Advanced%20Models/007%20Rendering%20the%20Product%20Detail%20View.md)
+  > 2023/02/13
    
 ## Subtitles (Farsi)
   - [01 Introduction](01%20Introduction/Subtitles%20(Farsi))
