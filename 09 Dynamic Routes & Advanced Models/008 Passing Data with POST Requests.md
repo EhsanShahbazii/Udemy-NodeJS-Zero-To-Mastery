@@ -29,3 +29,7 @@ router.post("/cart", shopController.getCart);
 ```ejs
 <%- include('../includes/add-to-card.ejs') %>
 ```
+باید دقت کنیم `include` توی حلقه ارور خواهد داد برای همین پارامتر دوم می نویسیم به صورت زیر:
+```ejs
+<%- include('../includes/add-to-card.ejs', {product: product}) %>
+```
