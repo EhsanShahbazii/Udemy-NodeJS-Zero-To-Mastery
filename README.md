@@ -84,6 +84,8 @@ Docs language: Farsi
   > 2023/01/31
   - [007 Rendering the Product Detail View](09%20Dynamic%20Routes%20&%20Advanced%20Models/007%20Rendering%20the%20Product%20Detail%20View.md)
   > 2023/02/13
+  - [008 Passing Data with POST Requests](09%20Dynamic%20Routes%20&%20Advanced%20Models/008%20Passing%20Data%20with%20POST%20Requests.md)
+  > 2023/02/21
    
 ## Subtitles (Farsi)
   - [01 Introduction](01%20Introduction/Subtitles%20(Farsi))
