@@ -34,3 +34,7 @@ header: {
   cookie: 'Webstorm-207d96f1=74c3acf4-b870-4723-9c77-f7ea2dd96f2a'
 }
 ```
+
+[صفحه قبلی](006%20Understanding%20Requests.md)
+
+[صفحه بعدی](007%20Sending%20Responses.md)
