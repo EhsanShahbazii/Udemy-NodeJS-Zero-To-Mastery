@@ -7,9 +7,13 @@ const http = require('http');
 
 const server = http.createServer((req, res) => {
   console.log(req);
-  procees.exit( )
+  procees.exit();
 });
 
 sever.listen(3000);
 ```
 این باعث میشه وقتی به سرور یه ریکوِئستی برسه، این متد فراخوانی میشه و سرور ما خاموش میشه.
+
+[صفحه قبلی](004%20The%20Node%20Lifecycle%20&%20Event%20Loop.md)
+
+[صفحه بعدی](006%20Understanding%20Requests.md)
