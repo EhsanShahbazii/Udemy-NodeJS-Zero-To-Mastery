@@ -42,5 +42,5 @@ res.setHeader('Content-Type', 'text/plain');
 res.end('Hello World\n');
 ```
 و در آخر هم ما ریسپانس رو می بندیم و یه آرگومان بهش می دیم که نمایش بده.
-
+[Previous page](003%20Creating%20a%20Node%20Server.md)
 [Next page](004%20The%20Node%20Lifecycle%20&%20Event%20Loop.md)
