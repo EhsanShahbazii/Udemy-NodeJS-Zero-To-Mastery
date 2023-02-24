@@ -23,3 +23,7 @@ const server = http.createServer((req, res) => {
 server.listen(3000);
 ```
 اگه یوزر دکمه `submit` رو بزنه، هدایت میشه به صفحه `message`.
+
+[صفحه قبلی](007%20Sending%20Responses.md)
+
+[صفحه بعدی](010%20Redirecting%20Requests.md)
