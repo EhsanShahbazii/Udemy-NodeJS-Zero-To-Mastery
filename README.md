@@ -97,3 +97,5 @@ Docs language: Farsi
   - [07 The Model View Controller (MVC)](07%20The%20Model%20View%20Controller%20(MVC)/Subtitles%20(Farsi))
   - [08 Optional_ Enhancing the App](08%20Optional_%20Enhancing%20the%20App/Subtitles%20(Farsi))
   - [09 Dynamic Routes & Advanced Models](09%20Dynamic%20Routes%20&%20Advanced%20Models/Subtitles%20(Farsi))
+  
+  
